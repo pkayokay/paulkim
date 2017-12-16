@@ -5,10 +5,19 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    = favicon_link_tag "/favicon.ico"
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
   %body
+    .triangle
     .hero
-      -#. %h1= 'Paul Kim'
+      %h1= 'Paul Kim'    
       = render 'default/shared/navigation'     
     .container
       = yield
+      %footer
+        %a{ :href => "mailto:pkayokay@gmail.com", target: '_blank'}='Email' 
+        %a{ :href => "http://www.github.com/pkayokay", target: '_blank'}='Github' 
+        %a{ :href => "http://www.linkedin.com/in/pkayokay", target: '_blank'}= 'LinkedIn' 
+        %a{ :href => "http://www.twitter.com/pkayokay", target: '_blank'}= 'Twitter' 
+        %br
+        %small= 'Copyright © 2017 pkayokay. All rights reserved.'    

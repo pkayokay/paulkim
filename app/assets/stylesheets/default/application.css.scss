@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Bitter:300,400,700,900');
 
 
@@ -35,29 +34,32 @@ a:hover {
 
 .container {
   max-width: 740px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   padding: 0 10px;
 }
 
 // Top section 
 .hero {
-  text-align: center;
+  text-align: right;
   padding: 0;
   max-width: 740px;
-  margin: 50px auto 70px;
+  margin: 50px auto 40px;
+  position: relative;
 }
 
 .hero h1 {
   margin: 0;
-  width: 50%;
   font-size: 1.7rem;
-  text-align: left;
-  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: #000;
 }
 
 .hero p {
   margin: 0;
 }
+
 ul.nav {
   padding: 0;
   margin: 0 auto;
@@ -69,16 +71,15 @@ ul.nav li {
   margin: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
+  color: #e00303;  
 }
 
 // Content
-
 .article {
   margin: 3rem 0;
 }
 
 .content h2 {
-  color: #0015ff;
   margin-bottom: 0.5rem;
 }
 
@@ -95,4 +96,74 @@ h1, h2, h3, h4, h5, h6 {
 
 .active a {
   opacity: 0.6;
+}
+
+// Footer
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+
+footer small {
+  font-size: 0.84rem;
+  color: #b0b0b0;
+}
+
+
+
+// Triangle 
+
+
+
+@media only screen and (min-width: 900px) {
+  .triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border-top: 400px solid #222;
+    border-right: 70px solid transparent;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .triangle {
+    border-top: 650px solid #222;
+    border-right: 150px solid transparent;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .content h2 {
+    font-size: 1.6rem;
+  }
+  .content p {
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }
+
+  .content span {
+    font-size: 1.1rem;
+  }
+  .hero {
+    text-align: center;
+    margin: 30px auto 20px;
+  }  
+  .hero h1 {
+    font-size: 1.6rem;
+    position: relative;
+  }
+  ul.nav li {
+    font-size: 1rem;
+  }
+  .article {
+    margin: 1.5rem 0;
+  }
 }
