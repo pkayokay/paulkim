@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Bitter:300,400,700,900');
-
 
 body {
   margin: 0;
@@ -14,6 +12,7 @@ hr {
   border: none;
   border-bottom: 1px solid #e2e2e2;
 }
+
 a,
 a:link,
 a:active,
@@ -105,21 +104,16 @@ footer {
 
 footer a {
   font-weight: 600;
-  font-size: 1.1rem;
-  margin: 0 0.5rem;
+  font-size: 1rem;
+  margin: 0 0.3rem;
 }
 
 footer small {
-  font-size: 0.84rem;
+  font-size: 0.73rem;
   color: #b0b0b0;
 }
 
-
-
 // Triangle 
-
-
-
 @media only screen and (min-width: 900px) {
   .triangle {
     position: absolute;
@@ -144,25 +138,30 @@ footer small {
   .content h2 {
     font-size: 1.6rem;
   }
+
   .content p {
     line-height: 1.7rem;
     font-size: 1rem;
   }
-
+  
   .content span {
     font-size: 1.1rem;
   }
+  
   .hero {
     text-align: center;
     margin: 30px auto 20px;
   }  
+  
   .hero h1 {
     font-size: 1.6rem;
     position: relative;
   }
+  
   ul.nav li {
     font-size: 1rem;
   }
+  
   .article {
     margin: 1.5rem 0;
   }
