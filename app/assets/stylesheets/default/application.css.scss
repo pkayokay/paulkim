@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Bitter:300,400,700,900');
+
 
 body {
-  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
+  font-family: 'Lato', 'Helvetica Neue', 'Arial', serif;
 }
 
+hr {
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+}
 a,
+a:link,
 a:active,
 a:visited,
 a:focus {
   text-decoration: none;
-  color: #273043;
+  color: #000;
 }
 
 a:hover {
@@ -35,7 +44,7 @@ a:hover {
   text-align: center;
   padding: 0;
   max-width: 740px;
-  margin: 50px auto 80px;
+  margin: 50px auto 70px;
 }
 
 .hero h1 {
@@ -44,7 +53,6 @@ a:hover {
   font-size: 1.7rem;
   text-align: left;
   display: inline-block;
-  color: #d1d1d1;
 }
 
 .hero p {
@@ -61,15 +69,30 @@ ul.nav li {
   margin: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #273043;
 }
 
 // Content
+
+.article {
+  margin: 3rem 0;
+}
+
 .content h2 {
-  color: #273043;
+  color: #0015ff;
+  margin-bottom: 0.5rem;
 }
 
 .content p {
   line-height: 1.8rem;
   font-size: 1.1rem;
+  font-weight: 400;
+  font-family: 'Roboto',  'Helvetica Neue', 'Arial', serif;
+}
+
+.content span {
+  color: #b0b0b0;
+}
+
+.active a {
+  opacity: 0.6;
 }
