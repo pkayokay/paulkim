@@ -84,8 +84,8 @@ ul.nav li {
 }
 
 .content p {
-  line-height: 1.8rem;
-  font-size: 1.1rem;
+  line-height: 1.7rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #323a42;
 }
@@ -115,11 +115,6 @@ footer small {
 @media only screen and (max-width: 900px) {
   .content h2 {
     font-size: 1.6rem;
-  }
-
-  .content p {
-    line-height: 1.7rem;
-    font-size: 1rem;
   }
   
   .hero {
