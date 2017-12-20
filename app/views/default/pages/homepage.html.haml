@@ -1,8 +1,10 @@
-
 = @page.content(:text).try(:html_safe)
 .content
   - Spina::Page.all.each do |page|
     - if page.ancestry == '1'
       %a{ :href => 'blog/' + page.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') }
         %h2= page.title
+        %span= @page.created_at.strftime("%B %d, %Y")
       .article= page.content(:text).try(:html_safe)
+      %hr
+      

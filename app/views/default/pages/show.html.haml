@@ -1,5 +1,4 @@
 .content
-  
   %h2= @page.title
   %span= @page.created_at.strftime("%B %d, %Y")
   .article= @page.content(:text).try(:html_safe)
