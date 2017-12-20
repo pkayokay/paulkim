@@ -1,6 +1,6 @@
 .content
   %h2= @page.title
-  %span= 'Oct 17, 2017'
+  %span= @page.created_at.strftime("%B %d, %Y")
 
   .article= @page.content(:text).try(:html_safe)
 

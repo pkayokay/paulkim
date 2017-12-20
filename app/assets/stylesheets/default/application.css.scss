@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Lora:300,400,700,900');
-  //font-family: '', 'Arial', serif;
-  //font-family: 'Josefin Sans', 'Arial', serif;
-  //font-family: 'Playfair Display', 'Arial', serif;
 
 body, span {
   margin: 0;
@@ -13,7 +8,6 @@ body, span {
 
 h1, h2, h3, h4, h5, h6, footer, span {
   color: #0854ff;  
-  
 }
 hr {
   border: none;
@@ -41,7 +35,7 @@ a:hover {
   max-width: 740px;
   margin: 0 auto 70px;
   padding: 0 10px;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
 }
 
 // Top section 
@@ -139,7 +133,10 @@ footer small {
 }
 
 @media only screen and (max-width: 500px) {
-
+  
+  .container {
+    line-height: 1.4rem;
+  }
   .content h2 {
     font-size: 1.5rem;
   }
