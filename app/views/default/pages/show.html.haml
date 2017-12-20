@@ -1,3 +1,6 @@
-%h2= @page.title
-= @page.content(:text).try(:html_safe)
+.content
+  %h2= @page.title
+  %span= 'Oct 17, 2017'
+
+  .article= @page.content(:text).try(:html_safe)
 
