@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Cousine:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:300,400,700,900');
+  //font-family: '', 'Arial', serif;
+  //font-family: 'Josefin Sans', 'Arial', serif;
+  //font-family: 'Playfair Display', 'Arial', serif;
 
-body {
+body, span {
   margin: 0;
   padding: 0;
-  font-size: 1.2rem;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', serif;
+  font-family: 'Helvetica Neue', 'Arial', serif;
 }
 
-h1, h2, h3, h4, h5, h6, li, footer {
+h1, h2, h3, h4, h5, h6, footer, span {
   color: #0854ff;  
-  font-family: 'Cousine', 'Helvetica Neue', 'Arial', serif;  
+  
 }
-
 hr {
   border: none;
   border-bottom: 1px solid #e2e2e2;
@@ -39,6 +41,7 @@ a:hover {
   max-width: 740px;
   margin: 0 auto 70px;
   padding: 0 10px;
+  line-height: 1.5rem;
 }
 
 // Top section 
@@ -52,11 +55,12 @@ a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   position: absolute;
   top: 10px;
+  font-weight: 300;
   left: 0;
-  color: #d6d6d6;
+  color: #c5c5c5;
 }
 
 .hero p {
@@ -76,23 +80,24 @@ ul.nav li {
 
 // Content
 .article {
-  margin: 3rem 0;
+  margin: 1.5rem 0;
 }
 
+.content {
+  margin: 50px 0;
+}
+
+.content a {
+  text-decoration: underline;
+}
 .content h2 {
-  margin-bottom: 0.5rem;
-}
-
-.content p {
-  line-height: 1.7rem;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: #323a42;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .content span {
   color: #b0b0b0;
-  font-size: 1.1rem;
 }
 
 // Footer
@@ -102,20 +107,16 @@ footer {
 
 footer a {
   font-weight: 600;
-  font-size: 1rem;
   margin: 0 0.3rem;
 }
 
 footer small {
-  font-size: 0.6rem;
   color: #b0b0b0;
+  font-size: 12px;
 }
 
 // Media queries
-@media only screen and (max-width: 900px) {
-  .content h2 {
-    font-size: 1.6rem;
-  }
+@media only screen and (max-width: 770px) {
   
   .hero {
     text-align: center;
@@ -125,17 +126,28 @@ footer small {
   .hero h1 {
     font-size: 1.6rem;
     position: relative;
+    margin-bottom: 5px;
   }
   
   ul.nav li {
     font-size: 1rem;
   }
-  
-  .article {
-    margin: 1.5rem 0;
-  }
 
   .container {
-    margin-bottom: 35px;
+    margin: 35px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .container {
+    line-height: 1.4rem;
+  }
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    font-size: 14px;    
   }
 }
