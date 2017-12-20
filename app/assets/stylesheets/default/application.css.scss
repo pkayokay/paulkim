@@ -15,6 +15,9 @@ hr {
   margin: 40px 0;
 }
 
+hr:last-child {
+  display:none; 
+}
 a,
 a:link,
 a:active,
@@ -62,6 +65,13 @@ a:hover {
   margin: 0;
 }
 
+.hero a,
+.hero a:link,
+.hero a:active,
+.hero a:visited,
+.hero a:focus {
+  text-decoration: none;
+}
 ul.nav {
   padding: 0;
   margin: 10px auto 0;
