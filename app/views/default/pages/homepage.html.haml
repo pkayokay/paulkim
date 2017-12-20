@@ -1,15 +1,8 @@
 
 = @page.content(:text).try(:html_safe)
 .content
-  .article
-    %h2= 'Why Ruby on Rails?'
-    %span= 'Oct 19, 2017'
-    %p= 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.'
-    %p= 'When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-    %p= 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-  
-  %hr
-  .article
-    %h2= 'React and VueJS?'
-    %span= 'Oct 20, 2017'
-    %p= 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+  - Spina::Page.all.each do |page|
+    - if page.ancestry == '1'
+      %a{ :href => 'blog/' + page.title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') }
+        %h2= page.title
+      .article= page.content(:text).try(:html_safe)

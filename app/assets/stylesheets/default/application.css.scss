@@ -81,9 +81,15 @@ ul.nav li {
   margin: 50px 0;
 }
 
-.content a {
+.content a:hover {
+  text-decoration: none;
+}
+
+.article a,
+.article a:hover {
   text-decoration: underline;
 }
+
 .content h2 {
   margin-bottom: 5px;
   font-weight: 500;
